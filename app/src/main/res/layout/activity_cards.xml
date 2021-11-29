@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CardsActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvFirst"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:cardBackgroundColor="@color/green"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            app:cardBackgroundColor="@color/light_green"
+            app:cardCornerRadius="24dp">
+
+            <TextView
+                android:id="@+id/tvFirstCardName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:textSize="24sp"
+                tools:text="Card name" />
+
+            <TextView
+                android:id="@+id/tvFirstCardDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:textSize="24sp"
+                android:autoSizeTextType="uniform"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac mauris risus. Ut consequat maximus erat, a rutrum urna scelerisque in. Nulla blandit euismod nisl et pharetra. Duis sodales odio ut ipsum egestas, vel volutpat justo imperdiet. Pellentesque tincidunt viverra orci nec vulputate. Ut euismod augue eget eros malesuada pellentesque ut in massa. Curabitur id gravida tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam porttitor consectetur tellus vel vestibulum." />
+
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvSecond"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        android:translationZ="-1dp"
+        app:cardBackgroundColor="@color/green"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            app:cardBackgroundColor="@color/light_green"
+            app:cardCornerRadius="24dp">
+
+            <TextView
+                android:id="@+id/tvSecondCardName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:textSize="24sp"
+                tools:text="Second card name" />
+
+            <TextView
+                android:id="@+id/tvSecondCardDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:textSize="24sp"
+                android:autoSizeTextType="uniform"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac mauris risus. Ut consequat maximus erat, a rutrum urna scelerisque in. Nulla blandit euismod nisl et pharetra. Duis sodales odio ut ipsum egestas, vel volutpat justo imperdiet. Pellentesque tincidunt viverra orci nec vulputate. Ut euismod augue eget eros malesuada pellentesque ut in massa. Curabitur id gravida tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam porttitor consectetur tellus vel vestibulum." />
+
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/piTopics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true" />
+
+</RelativeLayout>
