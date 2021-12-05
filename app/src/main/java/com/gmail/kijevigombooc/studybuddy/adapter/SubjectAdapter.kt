@@ -5,13 +5,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.gmail.kijevigombooc.studybuddy.R
-import com.gmail.kijevigombooc.studybuddy.databinding.FragmentSubjectBinding
-import kotlinx.android.synthetic.main.fragment_subject.view.*
+import com.gmail.kijevigombooc.studybuddy.databinding.ItemSubjectBinding
+import kotlinx.android.synthetic.main.item_subject.view.*
 
 class SubjectAdapter(private val onClick : (String) -> Unit) : RecyclerView.Adapter<SubjectAdapter.ViewHolder>(){
 
     class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
-        val binding = FragmentSubjectBinding.bind(itemView)
+        val binding = ItemSubjectBinding.bind(itemView)
     }
 
     var subjects : MutableList<String> = mutableListOf<String>()
@@ -22,7 +22,7 @@ class SubjectAdapter(private val onClick : (String) -> Unit) : RecyclerView.Adap
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.fragment_subject, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_subject, parent, false)
         return ViewHolder(view)
     }
 
